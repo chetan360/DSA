@@ -13,14 +13,13 @@ int main()
 		}
 	}
 	
-	is_lower = 1;
 	for(i=0;i<=2;i++)
 	{
 		for(j=0;j<=2;j++)
 		{
-			if(i<j && a[i][j]!=0)
+			if(i<j && a[i][j]==0)
 			{
-				is_lower = 0;
+				is_lower = 1;
 			}
 		}
 	}
