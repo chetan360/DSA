@@ -9,7 +9,7 @@ void merge(char name[][50], int lb, int mid, int ub) {
     k = lb;
 
     while((i <= mid) && (j <= ub)) {
-        if((strcmp(name[i], name[j])<0) || (strcmp(name[i], name[j])==0)) {
+        if(strcmp(name[i], name[j]) <= 0) {
             strcpy(b[k++], name[i++]);
         } else {
             strcpy(b[k++], name[j++]);
