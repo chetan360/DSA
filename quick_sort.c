@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int partition(int arr[], int lb, int ub) {
-    int dn = lb;
+    int dn = lb+1;
     int up = ub;
     int pivot = arr[lb];
 
     do {
-        while(arr[up] < pivot && dn <= ub) {
+        while(arr[dn] < pivot && dn <= ub) {
             dn++;
         }
         while(arr[up] > pivot && up > lb) {
